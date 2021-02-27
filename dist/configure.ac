@@ -439,10 +439,6 @@ if test "$db_cv_java" = "yes" -o "$db_cv_jdbc" = "yes"; then
 	*)		CLASSPATH=".:$CLASSPATH";;
 	esac
 	export CLASSPATH
-	AC_PROG_JAVAC
-	AC_PROG_JAR
-	AC_PROG_JAVA
-	AC_JNI_INCLUDE_DIR
 
 	AC_MSG_CHECKING(java version)
         case "$JAVA" in
